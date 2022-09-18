@@ -1,9 +1,20 @@
-const Manager = require('../lib/Manager');
-const Employee = require('../lib/Employee');
-const { default: test } = require('node:test');
+const Manager = require('../lib/Manager.js');
+const Employee = require('../lib/Employee.js');
 
 test("Set office number", () => {
-    const testvalue = 100;
-    const e = new Manager("Bobby", "12345", "Bobby@test.com", testValue);
-    expect(e.officeNumber).toBe(testValue);
+    const testValue = 100;
+    const manager = new Manager("Bobby", "12345", "Bobby@test.com", testValue);
+    expect(manager.officeNumber).toBe(testValue);
+});
+
+test('getRole() should return "Manager"', () => {
+    const testValue = "Manager";
+    const manager = new Manager("Bobby", "12345", "Bobby@test.com", testValue);
+    expect(manager.getRole()).toBe(testValue);
+});
+
+test('Get office number from getOffice()', () => {
+    const testValue = 100;
+    const manager = new Manager("Bobby", "12345", "Bobby@test.com", testValue);
+    expect(manager.getOfficeNumber()).toBe(testValue);
 });
