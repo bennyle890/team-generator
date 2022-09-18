@@ -41,7 +41,7 @@ function ask() {
             type: 'input',
             message: 'What is their GitHub username?',
             name: 'github',
-            when: (ansers) => answers.type === 'Engineer'
+            when: (answers) => answers.type === 'Engineer'
         },
         {
             type: 'input',
