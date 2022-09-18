@@ -1,0 +1,19 @@
+{
+  "name": "team-profile-gen",
+  "version": "1.0.0",
+  "description": "profile-generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennyle890/team-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bennyle890/team-generator/issues"
+  },
+  "homepage": "https://github.com/bennyle890/team-generator#readme"
+}
