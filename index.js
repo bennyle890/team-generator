@@ -59,8 +59,34 @@ function ask() {
             ]
         }
     ])
-}
 
-.then(answers => {
-    
-}) 
+
+    .then(answers => {
+        if (answers.type === 'Manager') {
+         const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+         employees.push(manager);
+        } else if (answers.type === 'Engineer') {
+          const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
+          employees.push(engineer);
+        } else if (answers.type === 'Intern') {
+          const intern = new Intern(answers.name, answers.id, answers. email, answers.school);
+          employees.push(intern);
+        }
+
+        if (answers.addEmployee === 'Yes') {
+          ask();
+        } else {
+          console.log(JSON.stringify(employees, null, 2));
+          fs.writeFile(outputPath, render(employees), function(eer) {
+            
+              if (err) {
+                  return console.log(err);
+               }
+
+                console.log('New HTML document created!');
+            });
+        }
+    })
+};
+
+ask();
