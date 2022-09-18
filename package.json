@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bennyle890/team-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "jest": "^29.0.3"
   }
 }
