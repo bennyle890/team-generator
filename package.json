@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bennyle890/team-generator/issues"
   },
-  "homepage": "https://github.com/bennyle890/team-generator#readme"
+  "homepage": "https://github.com/bennyle890/team-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
