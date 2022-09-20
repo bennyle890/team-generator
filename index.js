@@ -5,6 +5,9 @@ const Engineer = require('./lib/Engineer.js');
 const inquirer = require ('inquirer');
 const fs = require('fs');
 
+const OUTPUT_DIR = require("../lib/htmlGuide");
+const webPage = path.join(OUTPUT_DIR, 'new.html');
+
 const employees = [];
 
 function ask() {
@@ -77,7 +80,7 @@ function ask() {
           ask();
         } else {
           console.log(JSON.stringify(employees, null, 2));
-          fs.writeFile(outputPath, render(employees), function(eer) {
+          fs.writeFile(webPage, render(employees), function(eer) {
             
               if (err) {
                   return console.log(err);
