@@ -3,11 +3,13 @@ const Manager = require('./lib/Manager.js');
 const Intern = require('./lib/Intern.js');
 const Engineer = require('./lib/Engineer.js');
 const inquirer = require ('inquirer');
+const path = require("path");
 const fs = require('fs');
 
-const OUTPUT_DIR = require("../lib/htmlGuide");
-const webPage = path.join(OUTPUT_DIR, 'new.html');
+const OUTPUT_DIR = path.resolve(__dirname, 'webPage');
+const webPagePath = path.join(OUTPUT_DIR, 'new.html');
 
+const render = require("./lib/htmlGuide.js");
 const employees = [];
 
 function ask() {
@@ -80,7 +82,7 @@ function ask() {
           ask();
         } else {
           console.log(JSON.stringify(employees, null, 2));
-          fs.writeFile(webPage, render(employees), function(eer) {
+          fs.writeFile(webPagePath, render(employees), function(err) {
             
               if (err) {
                   return console.log(err);
