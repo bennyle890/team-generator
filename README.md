@@ -2,7 +2,9 @@
 
 ## Description
 
-This is a teammate generator, which allows you to add your teammates to a list with their prospective emails, ID's, GitHub Usernames, etc. This repository will ask questions based off of the class of your teammate. Attached below will be a photo of what the repository will look like:
+This is a teammate generator, which allows you to add your teammates to a list with their prospective emails, ID's, GitHub Usernames, etc. This repository will ask questions based off of the class of your teammate. The final product will be found under the webPage folder in the new.html file. 
+
+Attached below will be a photo of what the repository will look like:
 
 ![Using node for the manager](./images/using-node.png)
 
