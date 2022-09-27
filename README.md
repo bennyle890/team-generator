@@ -14,7 +14,7 @@ The next photo will show you what the generator will look like once it has devel
 
 ## Usage
 
-In order to use this app, you will need Visual Studio Code and Node.js. You will also need to install inquirer version 8.2.4. 
+In order to use this app, you will need Visual Studio Code and Node.js. You will also need to install inquirer version 8.2.4 and jest.
 
 ##  Questions
 
